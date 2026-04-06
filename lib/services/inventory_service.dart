@@ -4,7 +4,7 @@ import 'package:inventory_management_app/models/item.dart';
 class InventoryService {
   final CollectionReference _collection = FirebaseFirestore.instance.collection('inventory');
   Future<void> addItem(ItemModel item) async {
-  await _collection.add(item.toMap());
+    await _collection.add(item.toMap());
   }
   Stream<List<ItemModel>> streamItems() {
   return _collection.snapshots().map(
@@ -20,3 +20,5 @@ class InventoryService {
     await _collection.doc(id).delete();
   }
 }
+
+
