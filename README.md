@@ -42,4 +42,4 @@ Feature 1: Real-time Inventory Search
    
 Feature 2: Low Stock Alerts
 - items with a quantity of 5 or below are flagged with a coloured badge
-- 
+  
